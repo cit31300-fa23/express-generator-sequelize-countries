@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+    </head>
+    <body>
+        <h1><%= title %></h1>
+        <ul id="countries">
+
+            <% countrylist.forEach( (country) => {  %>
+                <!-- 1: Aruba (ARB) -->
+                <li><%= country.id %>: <%= country.name %> (<%= country.cca3_code %>)</li>
+            <% } ) %>
+
+        </ul>
+    </body>
+</html>

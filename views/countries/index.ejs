@@ -10,7 +10,8 @@
 
             <% countrylist.forEach( (country) => {  %>
                 <!-- 1: Aruba (ARB) -->
-                <li><%= country.id %>: <%= country.name %> (<%= country.cca3_code %>)</li>
+                <!-- <li><%= country.id %>: <%= country.name %> (<%= country.cca3_code %>)</li> -->
+                <li><a href='/countries/<%= country.id %>'><%= country.id %>: <%= country.name %> (<%= country.cca3_code %>)</a></li>
             <% } ) %>
 
         </ul>
